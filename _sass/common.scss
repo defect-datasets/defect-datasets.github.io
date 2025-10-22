@@ -1,0 +1,68 @@
+@mixin tag-color($background, $color: black) {
+  background: $background;
+  color: $color;
+
+  &:hover {
+    background: adjust-color($background, $saturation: -10%, $lightness: -10%);
+  }
+
+  &:active {
+    background: adjust-color($background, $saturation: -20%, $lightness: -20%);
+  }
+}
+
+.tag-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tag {
+  display: inline-block;
+  padding: 1px 0.5em;
+  border-radius: 3px;
+
+  font-size: 0.8em;
+  font-weight: 600;
+  cursor: pointer;
+
+  margin: 0 3px 3px 0;
+
+  &.lower {
+    text-transform: lowercase;
+  }
+
+  &.green {
+    @include tag-color(hsl(120, 73%, 75%));
+  }
+
+  &.blue {
+    @include tag-color(hsl(210, 90%, 80%));
+  }
+
+  &.gray {
+    @include tag-color(hsl(0, 0%, 83%));
+  }
+
+  &.red {
+    @include tag-color(hsl(0, 100%, 75%));
+  }
+}
+
+a.artifact.dead {
+  color: darkred;
+}
+
+.empty {
+  color: #808080;
+  font-style: italic;
+}
+
+button img.dl-icon {
+  height: 1em;
+  margin-right: 0.5em;
+}
+
+article.post {
+  max-width: 900px;
+  margin: 0 auto;
+}

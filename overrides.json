@@ -1,0 +1,80 @@
+{
+  "journals/tse/GouesHSBDFW15": {
+    "paperId": "journals/tse/GouesHSBDFW15",
+    "title": "The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs.",
+    "venue": "TSE",
+    "year": "2015",
+    "domain": [
+      "General"
+    ],
+    "type": [
+      "Functional"
+    ],
+    "lang": [
+      "C/C++"
+    ],
+    "presentation": [
+      "Project"
+    ],
+    "source": [
+      "Issue Reports"
+    ],
+    "availability": [
+      "available"
+    ],
+    "hosting": [
+      "host",
+      "available"
+    ],
+    "artifacts": [
+      {
+        "type": "live",
+        "href": "http://repairbenchmarks.cs.umass.edu/"
+      },
+      {
+        "type": "live",
+        "href": "https://repairbenchmarks.cs.umass.edu/ManyBugs/"
+      }
+    ],
+    "url": "https://ieeexplore.ieee.org/abstract/document/7153570/"
+  },
+  "journals/tse/GouesHSBDFW15:2": {
+    "paperId": "journals/tse/GouesHSBDFW15",
+    "title": "The ManyBugs and IntroClass Benchmarks for Automated Repair of C Programs.",
+    "venue": "TSE",
+    "year": "2015",
+    "domain": [
+      "General"
+    ],
+    "type": [
+      "Functional"
+    ],
+    "lang": [
+      "C/C++"
+    ],
+    "presentation": [
+      "File"
+    ],
+    "source": [
+      "Coding Assignments"
+    ],
+    "availability": [
+      "available"
+    ],
+    "hosting": [
+      "host",
+      "available"
+    ],
+    "artifacts": [
+      {
+        "type": "live",
+        "href": "http://repairbenchmarks.cs.umass.edu"
+      },
+      {
+        "type": "live",
+        "href": "https://repairbenchmarks.cs.umass.edu/IntroClass/"
+      }
+    ],
+    "url": "https://ieeexplore.ieee.org/abstract/document/7153570/"
+  }
+}
