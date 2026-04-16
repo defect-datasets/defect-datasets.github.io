@@ -1,0 +1,57 @@
+---
+---
+
+$background: #f0f0f0;
+$button-color: lighten($background, 3%);
+$button-border-color: #a2a2a2;
+
+$control-padding: 0.25em 1em;
+
+@mixin table-button($bg, $border, $hover: true) {
+  background: $bg;
+  border: solid 1px $border;
+  border-radius: 3px;
+
+  @if $hover {
+    &:hover:not(:disabled) {
+      background: darken($bg, 10%);
+    }
+  }
+}
+
+div.dt-buttons > button.dt-button {
+  @include table-button($button-color, $button-border-color !important);
+  padding: $control-padding;
+
+  > span {
+    display: flex;
+    align-items: center;
+  }
+}
+
+div.dtsb-searchBuilder {
+  background: $background;
+  border: 1px solid #bfbfbf;
+  padding: 0.5em 1em 0;
+  font-size: 0.85em;
+
+  button.dtsb-button,
+  select.dtsb-dropDown {
+    font-size: 1em;
+    padding: $control-padding;
+  }
+
+  div.dtsb-group div.dtsb-logicContainer {
+    @include table-button($button-color, $button-border-color, false);
+  }
+
+  button.dtsb-button {
+    @include table-button($button-color, $button-border-color);
+  }
+
+  div.dtsb-titleRow div.dtsb-title {
+    padding-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}

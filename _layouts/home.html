@@ -1,0 +1,22 @@
+---
+layout: default
+custom_css: [datatables.min, datatables-overrides]
+bottom_matter: 'This page uses icons by Hadrien Boyer under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.'
+---
+<script defer src="{{ "/assets/js/datatables.min.js" | relative_url }}"></script>
+<script defer src="{{ "/assets/js/home.js" | relative_url }}"></script>
+<script id="paper-data" type="application/json">
+  {{ site.data.datasets | jsonify }}
+</script>
+<template id="dl-icon">
+  <img class="dl-icon" src="{{ "/assets/dl.svg" | relative_url }}"></img>
+</template>
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <table id="paper-table"></table>
+</div>

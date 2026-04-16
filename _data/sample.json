@@ -1,0 +1,41 @@
+[
+  {
+    "dblp": "journals/ese/TimperleyHSDW24",
+    "title": "ROBUST: 221 bugs in the Robot Operating System",
+    "year": "2024",
+    "venue": "ESE",
+    "domain": [
+      "Autonomous Systems"
+    ],
+    "type": [
+      "functional",
+      "concurrency"
+    ],
+    "lang": [],
+    "presentation": [
+      "framework"
+    ],
+    "artifact": {
+      "type": "live",
+      "href": "https://github.com/robust-rosin/robust"
+    }
+  },
+  {
+    "dblp": "conf/hotpar/JalbertPPS11",
+    "comment": "Artifact not available, so `presentation` and `artifact` are empty",
+    "title": "RADBench: A Concurrency Bug Benchmark Suite.",
+    "year": "2011",
+    "venue": "HotPar",
+    "domain": [
+      "General"
+    ],
+    "type": [
+      "concurrency"
+    ],
+    "lang": [
+      "C/C++"
+    ],
+    "presentation": [],
+    "artifact": null
+  }
+]

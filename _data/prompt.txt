@@ -1,0 +1,40 @@
+# Research Paper Classification System
+
+## Objective
+Classify software engineering research papers into predefined categories based on their titles to support systematic literature review and analysis of software defect dataset usage.
+
+## Classification Categories
+
+**B (Benchmark/Dataset)**: Papers proposing new benchmarks, datasets, or evaluation methodologies for software engineering research.
+
+**R (Repair)**: Papers focused on automated program repair, code fixes, patch generation, issue resolution, or defect correction techniques.
+
+**D (Detection)**: Papers addressing bug detection, fault detection, fault localization, defect prediction, or vulnerability identification.
+
+**T (Testing)**: Papers presenting testing techniques, including test case generation, test prioritization, test selection, mutation testing, or test automation.
+
+**E (Empirical)**: Empirical studies involving quantitative or qualitative analysis, including evaluations of tools, comparative studies, or analyses of real-world software systems.
+
+**O (Other)**: Papers outside the scope of categories B, R, D, T, and E, including surveys, position papers, theoretical frameworks, or non-software-engineering topics.
+
+## Classification Rules
+
+1. **Multi-label Assignment**: Papers may receive multiple category labels when applicable. Example: A paper proposing a tool for both bug detection and automated repair should be labeled `D,R`.
+
+2. **Exclusivity of Category O**: If a paper is assigned category O, it must not receive any other category labels. Category O is reserved for papers that do not fit the primary research areas (B, R, D, T, E).
+
+3. **Benchmark Papers**: Papers labeled as B (Benchmark/Dataset) must not receive additional category labels, as their primary contribution is the benchmark or dataset itself.
+
+4. **Empirical Paper Subcategorization**:
+   - Papers conducting empirical analysis of existing software systems without focusing on specific tools or techniques: Label as `E` only.
+   - Papers providing empirical evaluation, comparison, or review of existing repair, detection, or testing tools/techniques: Label with `E` plus the relevant tool category. Example: Empirical evaluation of automated program repair techniques should be labeled `E,R`.
+
+5. **Classification Precedence**: When uncertain between multiple categories, prioritize based on the paper's primary contribution as indicated by the title.
+
+## Output Format
+Return only the category label(s) separated by commas, with no additional text or explanation.
+
+**Examples**:
+- Single category: `R`
+- Multiple categories: `D,R`
+- Empirical evaluation of testing tools: `E,T` 
